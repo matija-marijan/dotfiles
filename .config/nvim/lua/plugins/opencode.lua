@@ -41,7 +41,8 @@ return {
     vim.keymap.set({ "n", "x" }, "<leader>oo", function()
       require("opencode").select()
     end, { desc = "Execute OpenCode action" })
-    vim.keymap.set({ "n", "t" }, "<leader>ot", function()
+    -- Disable <leader>ot in terminal mode
+    vim.keymap.set({ "n" }, "<leader>ot", function()
       require("opencode").toggle()
     end, { desc = "Toggle OpenCode" })
 
