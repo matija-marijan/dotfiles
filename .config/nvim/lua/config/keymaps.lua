@@ -5,3 +5,5 @@
 -- Override LazyVim's Ctrl+/ terminal to use toggle instead of creating new terminal
 -- vim.keymap.set({ "n", "t" }, "<c-/>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
 -- vim.keymap.set({ "n", "t" }, "<c-_>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "which_key_ignore" })
+
+vim.keymap.set("i", "<S-Tab>", "<C-d>", { desc = "Unindent" })
