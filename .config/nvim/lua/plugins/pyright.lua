@@ -3,17 +3,19 @@ return {
   opts = {
     servers = {
       pyright = {
+        handlers = {
+          ["textDocument/publishDiagnostics"] = function() end,
+        },
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "off",
+              typeCheckingMode = "basic",
             },
           },
         },
       },
       ruff = {
         on_attach = function(client, bufnr)
-          -- Disable hover in favor of Pyright
           client.server_capabilities.hoverProvider = false
         end,
       },
