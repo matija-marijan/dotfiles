@@ -2,8 +2,20 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Override LazyVim's Ctrl+/ terminal to use toggle instead of creating new terminal
--- vim.keymap.set({ "n", "t" }, "<c-/>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
--- vim.keymap.set({ "n", "t" }, "<c-_>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "which_key_ignore" })
+-- Ctrl+` toggles terminal (replaces Ctrl+/)
+-- vim.keymap.set({ "n", "i", "t" }, "<C-`>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
 
+vim.keymap.set({ "n", "i", "t" }, "<C-`>", function()
+  Snacks.terminal.toggle(nil, { count = vim.v.count1 })
+end, { desc = "Toggle terminal" })
+
+-- Ctrl+/ toggles comment
+vim.keymap.set("n", "<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+vim.keymap.set("v", "<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+vim.keymap.set("i", "<C-/>", "<C-o>gcc", { remap = true, silent = true, desc = "Toggle comment" })
+
+-- Indent and unindent in insert mode
 vim.keymap.set("i", "<S-Tab>", "<C-d>", { desc = "Unindent" })
+
+vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Delete word" })
+vim.keymap.set("i", "<C-Del>", "<C-o>dw", { desc = "Delete word after cursor" })
