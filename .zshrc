@@ -123,3 +123,9 @@ export PATH=/home/matija-marijan/.opencode/bin:$PATH
 
 # .cfg setup
 alias config='/usr/bin/git --git-dir=/home/matija-marijan/.cfg/ --work-tree=/home/matija-marijan'
+
+# kitty ssh alias
+alias ssh="kitty +kitten ssh"
+
+# source local zshrc
+source /mnt/data/.zshrc.local
