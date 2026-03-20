@@ -118,8 +118,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# opencode
+# opencode config
 export PATH=/home/matija-marijan/.opencode/bin:$PATH
+alias oc="opencode"
 
 # .cfg setup
 alias config='/usr/bin/git --git-dir=/home/matija-marijan/.cfg/ --work-tree=/home/matija-marijan'
