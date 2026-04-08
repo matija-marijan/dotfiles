@@ -1,0 +1,7 @@
+[Layout]
+DisplayNames=eng,lat,ћир
+LayoutList=us,rs,rs
+Options=caps:swapescape
+ResetOldOptions=true
+Use=true
+VariantList=,latinalternatequotes,alternatequotes
