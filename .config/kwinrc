@@ -23,7 +23,10 @@ DayTemperature=5500
 NightTemperature=2700
 
 [Plugins]
+fadeEnabled=true
+hidecursorEnabled=true
 krohnkiteEnabled=true
+scaleEnabled=false
 shakecursorEnabled=false
 translucencyEnabled=true
 zoomEnabled=false
@@ -129,3 +132,7 @@ VirtualKeyboardEnabled=true
 
 [Xwayland]
 Scale=1.25
+
+[org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze

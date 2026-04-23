@@ -145,6 +145,7 @@ smallestReadableFont=Noto Sans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Noto Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KDE]
+AnimationDurationFactor=0.35355339059327373
 LookAndFeelPackage=Breeze Custom
 contrast=4
 frameContrast=0.2
@@ -168,6 +169,9 @@ View Style=DetailTree
 
 [KScreen]
 ScreenScaleFactors=eDP-1=1;
+
+[Sounds]
+Theme=sound_modern-minimal-ui-sounds-v1.2
 
 [WM]
 activeBackground=39,44,49
