@@ -3,21 +3,14 @@ return {
   opts = {
     servers = {
       pyright = {
-        handlers = {
-          ["textDocument/publishDiagnostics"] = function() end,
-        },
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "basic",
+              typeCheckingMode = "off",
+              diagnosticMode = "openFilesOnly",
             },
           },
         },
-      },
-      ruff = {
-        on_attach = function(client, bufnr)
-          client.server_capabilities.hoverProvider = false
-        end,
       },
     },
   },
