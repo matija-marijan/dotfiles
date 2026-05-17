@@ -15,9 +15,11 @@ return {
 
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
-        vim.api.nvim_exec_autocmds("User", { pattern = "GitSignsUpdate", modeline = false })
+        if vim.b.gitsigns_head then
+          vim.api.nvim_exec_autocmds("User", { pattern = "GitSignsUpdate", modeline = false })
+        end
       end,
-      desc = "Force scrollview gitsigns refresh on buffer enter",
+      desc = "Force scrollview gitsigns refresh on git buffers",
     })
   end,
 }
