@@ -10,7 +10,7 @@ vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 vim.g.autoformat = false -- Disable autoformatting on save
 
--- vim.diagnostic.hide() -- Start with diagnostics off by default
+vim.diagnostic.enable(false) -- Start with diagnostics off by default
 
 -- vim.opt.colorcolumn = "100" -- Highlight column 100 to indicate line length limit
 
