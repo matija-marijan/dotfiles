@@ -1,15 +1,21 @@
 return {
   {
-    "LazyVim/LazyVim",
+    "catppuccin/nvim",
     opts = {
-      colorscheme = "catppuccin",
+      flavour = "macchiato",
+      custom_highlights = function(colors)
+        return {
+          GitSignsAdd = { fg = colors.green },
+          GitSignsChange = { fg = colors.peach },
+          GitSignsDelete = { fg = colors.red },
+        }
+      end,
     },
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "LazyVim/LazyVim",
     opts = {
-      flavour = "macchiato",
+      colorscheme = "catppuccin-nvim",
     },
   },
 }
