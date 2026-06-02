@@ -19,8 +19,8 @@ SlideBackground=false
 
 [NightColor]
 Active=true
-DayTemperature=5500
-NightTemperature=2700
+DayTemperature=6000
+NightTemperature=3000
 
 [Plugins]
 fadeEnabled=true
@@ -30,6 +30,11 @@ scaleEnabled=false
 shakecursorEnabled=false
 translucencyEnabled=true
 zoomEnabled=false
+
+[Script-krohnkite]
+screenGapBetween=5
+spiralLayoutOrder=1
+tileLayoutOrder=4
 
 [Tiling][600a5911-9610-4f1b-8e86-ce4e7ba079d1][1b56d3df-6fb0-4c6a-8f3e-c04c1ddd8640]
 padding=4

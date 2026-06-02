@@ -27,7 +27,7 @@ mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=,,Shut Down Without Confirmation
-Lock Session=Meta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
+Lock Session=Meta+Ctrl+L\tScreensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=,,Log Out Without Confirmation
 LogOut=,,Log Out
@@ -60,7 +60,7 @@ KrohnkiteDecrease=,none,Krohnkite: Decrease
 KrohnkiteFloatAll=Meta+Shift+F,none,Krohnkite: Toggle Float All
 KrohnkiteFloatingLayout=,none,Krohnkite: Floating Layout
 KrohnkiteFocusDown=Meta+J,none,Krohnkite: Focus Down
-KrohnkiteFocusLeft=Meta+H,none,Krohnkite: Focus Left
+KrohnkiteFocusLeft=none,none,Krohnkite: Focus Left
 KrohnkiteFocusNext=,none,Krohnkite: Focus Next
 KrohnkiteFocusPrev=Meta+\\,,none,Krohnkite: Focus Previous
 KrohnkiteFocusRight=,none,Krohnkite: Focus Right
@@ -85,9 +85,9 @@ KrohnkiteSpreadLayout=,none,Krohnkite: Spread Layout
 KrohnkiteStackedLayout=,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=,none,Krohnkite: Stair Layout
 KrohnkiteTileLayout=,none,Krohnkite: Tile Layout
-KrohnkiteToggleFloat=,none,Krohnkite: Toggle Float
+KrohnkiteToggleFloat=Meta+Alt+F,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=,none,Krohnkite: Three Column Layout
-KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
+KrohnkitegrowWidth=none,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=,none,Krohnkite: Toggle Dock
 Move Tablet to Next LogicalOutput=none,none,Move the tablet to the next output
 Move Tablet to Next Output=none,none,Move the tablet to the next output
@@ -133,9 +133,9 @@ Switch to Desktop 6=,,Switch to Desktop 6
 Switch to Desktop 7=,,Switch to Desktop 7
 Switch to Desktop 8=,,Switch to Desktop 8
 Switch to Desktop 9=,,Switch to Desktop 9
-Switch to Next Desktop=Ctrl+Alt+Right\tCtrl+Alt+L,,Switch to Next Desktop
+Switch to Next Desktop=Meta+L\tCtrl+Alt+L\tCtrl+Alt+Right,,Switch to Next Desktop
 Switch to Next Screen=,,Switch to Next Screen
-Switch to Previous Desktop=Ctrl+Alt+Left\tCtrl+Alt+H,,Switch to Previous Desktop
+Switch to Previous Desktop=Ctrl+Alt+Left\tCtrl+Alt+H\tMeta+H,,Switch to Previous Desktop
 Switch to Previous Screen=,,Switch to Previous Screen
 Switch to Screen 0=,,Switch to Screen 0
 Switch to Screen 1=,,Switch to Screen 1
@@ -315,12 +315,6 @@ _launch=Meta+B
 
 [services][kitty.desktop]
 _launch=Meta+Q
-
-[services][neovim.desktop]
-_launch=Meta+C
-
-[services][org.kde.konsole.desktop]
-_launch=none
 
 [services][org.mozilla.firefox.desktop]
 _launch=Meta+F
